@@ -1,0 +1,8 @@
+Placeholder so the assets/ directory exists.
+Expo Metro scans this folder for app icons and splash screens.
+For development we don't need any actual assets here — Expo uses defaults.
+Before shipping to TestFlight / Play Store, add:
+  - icon.png         (1024x1024)
+  - splash.png       (varies, see Expo docs)
+  - adaptive-icon.png (Android, 1024x1024)
+  - favicon.png      (web, 48x48)

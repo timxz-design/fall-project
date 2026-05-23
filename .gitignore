@@ -1,0 +1,41 @@
+# ---- Python (backend, bridge, scripts) ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# ---- Secrets / local config (keep the .example templates) ----
+.env
+.env.*
+!.env.example
+
+# ---- Local databases (contain runtime data + device tokens) ----
+*.db
+*.sqlite
+*.sqlite3
+
+# ---- Node / React Native (mobile) ----
+node_modules/
+.expo/
+dist/
+web-build/
+*.tsbuildinfo
+expo-env.d.ts
+
+# ---- Native build output ----
+**/ios/
+**/android/
+
+# ---- Logs ----
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ---- OS / editor cruft ----
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

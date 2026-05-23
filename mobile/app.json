@@ -1,0 +1,45 @@
+{
+  "expo": {
+    "name": "Fall Detect",
+    "slug": "fall-detect",
+    "version": "0.0.1",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "scheme": "falldetect",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.timkutin.falldetect",
+      "infoPlist": {
+        "UIBackgroundModes": [
+          "remote-notification"
+        ],
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "package": "com.timkutin.falldetect",
+      "useNextNotificationsApi": true,
+      "permissions": [
+        "android.permission.VIBRATE",
+        "android.permission.RECEIVE_BOOT_COMPLETED"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "color": "#d93025",
+          "defaultChannel": "fall-alerts"
+        }
+      ]
+    ],
+    "extra": {
+      "backendUrl": "http://192.168.1.17:8000",
+      "_comment": "Set to your laptop's LAN IP for real-device testing (current: 192.168.1.17). 10.0.2.2 = Android emulator. localhost = iOS simulator.",
+      "eas": {
+        "projectId": "5dc86c99-19a0-463f-8e2d-f73c438ef66f"
+      }
+    },
+    "owner": "kutinho99"
+  }
+}
